@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Grade 11 English learning environment for Units 3 and 4, with integrated skills practice and AI-supported learning.">
+  <title>Grade 11 English Learning Environment</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#6c4de6">
+</head>
+<body>
+  <div class="welcome-screen" id="welcomeScreen" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
+    <div class="welcome-card">
+      <div class="welcome-sparkles" aria-hidden="true">✦ ✨ ✦</div>
+      <div class="welcome-logo">E<span>+</span></div>
+      <p class="welcome-label">YOUR LEARNING ADVENTURE</p>
+      <h2 id="welcomeTitle">Hello, English Explorer! 🌈</h2>
+      <p class="welcome-copy">A new word, a brave try, a little progress — every step counts. Let’s learn together!</p>
+      <button id="startJourney" class="button button-primary welcome-start">Start my journey <span>🚀</span></button>
+      <small>Learn at your pace · Mistakes help you grow</small>
+    </div>
+  </div>
+  <div class="sound-dock" aria-label="Sound controls">
+    <button id="musicToggle" type="button" aria-pressed="false" title="Toggle cheerful background music">♫ <span>Music off</span></button>
+    <button id="soundToggle" type="button" aria-pressed="true" title="Toggle feedback sounds">🔔 <span>Sounds on</span></button>
+  </div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Grade 11 English home">
+      <span class="brand-mark">E<span>+</span></span>
+      <span><strong>Grade 11 English</strong><small>Learning Environment</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#unit3" class="nav-link">Unit 3 · Take Care!</a>
+      <a href="#unit4" class="nav-link">Unit 4 · Going Places</a>
+      <a href="#prompt-guide" class="nav-link">Prompt Guide</a>
+      <a href="#feedback" class="nav-link">Feedback</a>
+    </nav>
+    <button id="langToggle" class="language-button" type="button">العربية</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Learn · Practise · Grow</div>
+        <h1 id="heroTitle">Your English journey<br><span>starts here.</span></h1>
+        <p id="heroText">Explore Units 3 and 4 through practical activities that connect listening, speaking, reading and writing—with helpful feedback along the way.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#units" id="exploreBtn">Explore learning units <span>↗</span></a>
+          <button class="button button-secondary" id="openMiloHero" type="button">Meet Milo <span>✦</span></button>
+        </div>
+        <div class="hero-note"><span class="note-icon">✓</span><span id="heroNote">Learn at your pace. Check your answers. Try again.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Learning illustration">
+        <div class="hero-photo-frame"><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=85" alt="Students learning together and smiling" loading="eager"><span class="photo-caption">✨ You can do it!</span></div>
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-card card-main">
+          <div class="book-spine"></div><div class="book-lines"><i></i><i></i><i></i><i></i></div>
+          <div class="book-label">ENGLISH<br><b>LEVEL UP</b></div>
+          <div class="book-star">✦</div>
+        </div>
+        <div class="floating-bubble bubble-a">A B C</div>
+        <div class="floating-bubble bubble-b">Hello!</div>
+        <div class="floating-bubble bubble-c">✎</div>
+        <div class="floating-bubble bubble-d">♫</div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Learning focus">
+      <div><span class="stat-icon">◉</span><span><strong>4 language skills</strong><small>Practise them together</small></span></div>
+      <div><span class="stat-icon">✦</span><span><strong>AI-supported practice</strong><small>Use tools thoughtfully</small></span></div>
+      <div><span class="stat-icon">✓</span><span><strong>Feedback that helps</strong><small>Reflect and improve</small></span></div>
+    </section>
+
+    <section id="units" class="section units-section">
+      <div class="section-heading">
+        <div><span class="section-kicker">YOUR CLASSROOM</span><h2>Choose your learning unit</h2></div>
+        <p>Start with a unit, then work through its activities. Each unit includes practice and opportunities to connect skills.</p>
+      </div>
+      <div class="unit-grid">
+        <article id="unit3" class="unit-card unit-three">
+          <div class="unit-image image-safety"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80" alt="Safe and tidy home environment" loading="lazy"><span class="image-symbol">＋</span><span class="image-tag">UNIT 03 · TAKE CARE!</span></div>
+          <div class="unit-body">
+            <div class="unit-meta"><span>SAFETY & EVERYDAY LIFE</span><span class="pill">Unit 3</span></div>
+            <h3>Take Care!</h3>
+            <p>Learn how to talk about safety, accidents, prevention and rules in everyday situations.</p>
+            <div class="skill-chips"><span>Vocabulary</span><span>Listening</span><span>Reading</span><span>Grammar</span></div>
+            <button class="button button-primary unit-open" data-unit="3">Open Unit 3 <span>→</span></button>
+          </div>
+        </article>
+        <article id="unit4" class="unit-card unit-four">
+          <div class="unit-image image-travel"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Beautiful travel destination and mountains" loading="lazy"><span class="image-symbol">➜</span><span class="image-tag">UNIT 04 · GOING PLACES</span></div>
+          <div class="unit-body">
+            <div class="unit-meta"><span>TRAVEL & CHOICES</span><span class="pill">Unit 4</span></div>
+            <h3>Going Places</h3>
+            <p>Practise expressing preferences, describing experiences and communicating about places and journeys.</p>
+            <div class="skill-chips"><span>Vocabulary</span><span>Listening</span><span>Reading</span><span>Grammar</span></div>
+            <button class="button button-primary unit-open" data-unit="4">Open Unit 4 <span>→</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section pathway-section">
+      <div class="section-heading">
+        <div><span class="section-kicker">HOW LEARNING WORKS</span><h2>Skills work better together</h2></div>
+        <p>Complete connected tasks: understand a message, discuss it, read for information, then create your own response.</p>
+      </div>
+      <div class="pathway">
+        <div class="path-step"><span class="path-icon">🎧</span><b>1. Listen</b><p>Catch the main idea and important details.</p></div>
+        <span class="path-arrow">→</span>
+        <div class="path-step"><span class="path-icon">📖</span><b>2. Read</b><p>Find evidence and connect it to what you heard.</p></div>
+        <span class="path-arrow">→</span>
+        <div class="path-step"><span class="path-icon">💬</span><b>3. Speak</b><p>Share ideas and explain your choices.</p></div>
+        <span class="path-arrow">→</span>
+        <div class="path-step"><span class="path-icon">✍️</span><b>4. Write</b><p>Create a clear response for a real purpose.</p></div>
+      </div>
+      <p class="research-note"><strong>Learning reminder:</strong> Activities in this prototype are sample practice material. Replace or supplement them with verified textbook content and the approved research instruments before using the environment with students.</p>
+    </section>
+
+    <section class="milo-banner section">
+      <div class="milo-avatar">M<span>✦</span></div>
+      <div class="milo-copy"><span class="section-kicker">YOUR PRACTICE PARTNER</span><h2>Meet Milo</h2><p>Ask for a hint, practise a sentence, or get step-by-step guidance. Milo should support your thinking—not do all the work for you.</p></div>
+      <button class="button button-light" id="openMiloBanner" type="button">Open Milo <span>↗</span></button>
+    </section>
+
+    <section id="prompt-guide" class="section prompt-section">
+      <div class="section-heading">
+        <div><span class="section-kicker">PROMPT LIBRARY</span><h2>Ask better questions</h2></div>
+        <p>Use a clear prompt to tell an AI tool what you are learning and what kind of help you need.</p>
+      </div>
+      <div class="prompt-grid">
+        <article class="prompt-card"><div class="prompt-number">01</div><h3>Vocabulary coach</h3><p>Help me practise five words about home safety. Give a simple definition and one example, then quiz me one word at a time.</p><button class="copy-prompt" data-copy="Help me practise five words about home safety. Give a simple definition and one example, then quiz me one word at a time.">Copy prompt</button></article>
+        <article class="prompt-card"><div class="prompt-number">02</div><h3>Reading partner</h3><p>Ask me three questions about this text, one at a time. After each answer, explain what I did well and give me a hint if needed.</p><button class="copy-prompt" data-copy="Ask me three questions about this text, one at a time. After each answer, explain what I did well and give me a hint if needed.">Copy prompt</button></article>
+        <article class="prompt-card"><div class="prompt-number">03</div><h3>Writing feedback</h3><p>Review my paragraph for grammar and clarity. Point out errors, explain why, and let me try to correct them before showing a model.</p><button class="copy-prompt" data-copy="Review my paragraph for grammar and clarity. Point out errors, explain why, and let me try to correct them before showing a model.">Copy prompt</button></article>
+      </div>
+    </section>
+
+    <section id="feedback" class="section feedback-section">
+      <div class="feedback-panel">
+        <div><span class="section-kicker">YOUR VOICE MATTERS</span><h2>How was your learning experience?</h2><p>Share a quick reflection to help improve the learning environment.</p></div>
+        <form id="feedbackForm">
+          <label for="rating">How clear and easy to use was this page?</label>
+          <select id="rating" required><option value="">Choose a rating</option><option>5 - Very easy</option><option>4 - Easy</option><option>3 - Neither easy nor difficult</option><option>2 - Difficult</option><option>1 - Very difficult</option></select>
+          <label for="feedbackText">What helped you learn? What could be improved?</label>
+          <textarea id="feedbackText" rows="3" placeholder="Write your reflection here..."></textarea>
+          <button class="button button-primary" type="submit">Prepare feedback <span>→</span></button>
+          <p class="form-note">Prototype only: this form does not submit or store responses. Connect an approved Google Form before collecting research data.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">E<span>+</span></span><span><strong>Grade 11 English</strong><small>Learning Environment</small></span></a>
+    <p>Learn with curiosity. Use AI responsibly. Keep your own voice.</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
+
+  <button class="milo-fab" id="miloFab" type="button" aria-label="Open Milo assistant">M<span>✦</span></button>
+  <aside class="milo-panel" id="miloPanel" aria-label="Milo practice assistant" aria-hidden="true">
+    <div class="milo-panel-header"><div class="mini-avatar">M</div><div><strong>Milo</strong><small>English practice partner</small></div><button id="closeMilo" aria-label="Close Milo">×</button></div>
+    <div class="milo-messages" id="miloMessages"><div class="message message-milo">Hi! I'm Milo. 😊 Choose a practice area and I'll guide you step by step. This demo uses built-in sample responses.</div></div>
+    <div class="milo-quick-actions"><button data-topic="Vocabulary">Vocabulary</button><button data-topic="Grammar">Grammar</button><button data-topic="Writing">Writing</button><button data-topic="Speaking">Speaking</button></div>
+    <form id="miloForm" class="milo-input-row"><input id="miloInput" type="text" placeholder="Type your answer..." autocomplete="off" aria-label="Message Milo"><button type="submit" aria-label="Send message">➤</button></form>
+    <div class="milo-disclaimer">Demo assistant · Connect an AI API for live responses.</div>
+  </aside>
+
+  <dialog id="unitDialog" class="unit-dialog">
+    <div class="dialog-header"><div><span class="section-kicker" id="dialogKicker">UNIT PRACTICE</span><h2 id="dialogTitle">Take Care!</h2></div><button id="closeUnitDialog" class="dialog-close" aria-label="Close unit">×</button></div>
+    <div class="dialog-tabs" role="tablist">
+      <button class="dialog-tab active" data-tab="learn">Learn</button><button class="dialog-tab" data-tab="quiz">Quick check</button><button class="dialog-tab" data-tab="integrate">Connect skills</button>
+    </div>
+    <div id="unitDialogContent" class="dialog-content"></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
