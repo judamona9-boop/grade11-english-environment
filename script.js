@@ -111,16 +111,6 @@
     addMessage(topic, "user");
     setTimeout(() => addMessage(topicReplies[topic] || demoReply(topic)), 200);
   }));
-    addMessage(value, "user");
-    input.value = "";
-    setTimeout(() => addMessage(demoReply(value)), 250);
-  });
-
-  $$(".milo-quick-actions button").forEach(button => button.addEventListener("click", () => {
-    const topic = button.dataset.topic || "";
-    addMessage(topic, "user");
-    setTimeout(() => addMessage(topicReplies[topic] || demoReply(topic)), 200);
-  }));
 
   const unitData = {
     3: {
